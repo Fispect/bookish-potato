@@ -1,15 +1,1554 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+  <title>Программирование на C# для начинающих</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content="Программирование на C# с Нуля до Гуру 2.0."/>
+  <meta name="keywords" content="c#, программирование c#, c# михаил русаков"/>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
+  <script src="js/all.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header__wrap wrap">
+      <div class="header__course">
+        <img class="header__logo" src="img/header-logo.svg" alt="">
+        <p class="header__author">Михаил Русаков</p>
+        <h2 class="videocourse__course">ВИДЕОКУРС</h2>
+        <p class="videocourse__title">Программирование <span>на <img src="img/csharp.svg" alt=""> <span>с Нуля до Гуру</span></span></p>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="https://srs.myrusakov.ru/list" target="_blank">Другие курсы</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="https://myrusakov.ru/" target="_blank">Мой сайт</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="https://blog.myrusakov.ru/" target="_blank">Мой блог</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="https://support.myrusakov.ru/" target="_blank">Служба поддержки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-	<head>
-		<title>Ребят, это для вас</title>
-		<meta charset="UTF-8"/>
-		<link rel="icon" href="D:\Ярлыки\тест2\HTML_content\images_to_html\smile.ico" type="image/x-icon">
-		<link rel="stylesheet" href="C:\Users\Roman\Desktop\фэйк вк\css\crasota.css">
-	</head>
+  <div class="content">
+    <div class="wrap">
+      <h1 class="content__title">Содержание курса</h1>
+      <div class="content__section section">
+        <p class="section__name">Введение</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a target="_blank" href="lessons/Lesson_1_1/Lesson_1_1.mp4">Как проходить курс?</a>
+            </div>
+          </div>
+          <div class="section__lesson">
+            <div>
+             Урок 2. <a target="_blank" href="lessons/Lesson_1_2/Lesson_1_2.mp4">Что такое C# и платформа .NET?</a>
+            </div>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a target="_blank" href="lessons/Lesson_1_3/Lesson_1_3.mp4">Установка необходимого ПО</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Установите Visual Studio.</p>
+                <p>2) Создайте консольное приложение и запустите его.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__section section">
+        <p class="section__name">Основы языка C#</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+             Урок 1. <a target="_blank" href="lessons/Lesson_2_1/Lesson_2_1.mp4">Hello World</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Выведите в консоль строку: «Привет, мир!».</p>
+                <p>2) Выведите в консоль строку: «"Привет, мир!"».</p>
+                <p>3) Сотрите using System и добейтесь после этого успешной компиляции и запуска программы.</p>
+                <p>4) Используя командную строку, создайте консольное приложение.</p>
+                <p>5) Отредактируйте код так, чтобы выводилось 2 строки: «Hello World» и «Проверка\tТабуляции».</p>
+                <p>6) Запустите через консоль созданное приложение, сделав так, чтобы оно не закрывалось сразу после вывода строк.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_1.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+             Урок 2. <a target="_blank" href="lessons/Lesson_2_2/Lesson_2_2.mp4">Комментарии</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Прокомментируйте каждую строчку кода из предыдущего упражнения.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+             Урок 3. <a target="_blank" href="lessons/Lesson_2_3/Lesson_2_3.mp4">Переменные и их типы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Создайте переменную типа double со значением 32.29.</p>
+                <p>2) Создайте переменную типа float со значением 59.92.</p>
+                <p>3) Создайте переменную подходящего типа и поместите в неё значение «Привет, мир».</p>
+                <p>4) Создайте переменную типа char, в которую поместите первую букву Вашего имени</p>
+                <p>5) Выведите все переменные в консоль.</p>
+                <p>6) Создайте строковую переменную, в которую поместите своё имя.</p>
+                <p>7) Создайте целую переменную с именем age и присвойте ей значение Вашего возраста.</p>
+                <p>8) Выведите обе переменные в консоль в следующем виде: «Меня зовут ИМЯ, мне ВОЗРАСТ лет». Разумеется, вместо ИМЯ и ВОЗРАСТ должны подставляться соответствующие переменные.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a target="_blank" href="lessons/Lesson_2_4/Lesson_2_4.mp4">Арифметические операции</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Создайте 2 числовые переменные со значениями на Ваш выбор.</p>
+                <p>2) Выведите в консоль результат: суммы, разности, произведения, остатка от деления, получение целой части при делении.</p>
+                <p>3) Создайте переменную типа double и запишите в него следующее выражение: ((25 / 20 – 15) * 2) - 24 + 15 / 5.</p>
+                <p>4) Выведите эту переменную.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a target="_blank" href="lessons/Lesson_2_5/Lesson_2_5.mp4">Строковые операции</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Попросите пользователю ввести 1-ю строку и запишите её в переменную.</p>
+                <p>2) Попросите пользователю ввести 2-ю строку и запишите её в другую переменную.</p>
+                <p>3) Создайте 3-ю переменную, в которую запишите результат конкатенации строк из предыдущих пунктов.</p>
+                <p>4) Выведите 3-ю переменную в консоль.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_5.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 6. <a target="_blank" href="lessons/Lesson_2_6/Lesson_2_6.mp4">Логические операции</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Самостоятельно подумайте, чему будет равно следующее логическое выражение: true && (false || (true && true || false)  && false || true != false).</p>
+                <p>2) Проверьте себя, выведя результат этого выражения в консоль.</p>
+                <p>3) Самостоятельно подумайте, чему будет равно следующее логическое выражение: 12 &lt; 20 || (4 &gt; 3 && 5 &gt; 12 || (0 &gt;= 0 && 5 &lt; 18)).</p>
+                <p>4) Проверьте себя, выведя результат данного выражения в консоль.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_6.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 7. <a target="_blank" href="lessons/Lesson_2_7/Lesson_2_7.mp4">Преобразования типов</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Попросите пользователя ввести 3 числа.</p>
+                <p>2) Выведите пользователю среднее арифметическое этих чисел.</p>
+                <p>Примечание: среднее арифметическое чисел равно сумме этих чисел поделённое на их количество.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_7.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 8. <a target="_blank" href="lessons/Lesson_2_8/Lesson_2_8.mp4">Условный оператор</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Попросите пользователя ввести 2 числа.</p>
+                <p>2) Если делитель равен 0, то вывести в консоль строку: «Деление на ноль!».</p>
+                <p>3) Если делитель отличен от 0, то выведите в консоль ответ в таком виде: «ЧИСЛО_1 / ЧИСЛО_2 = ОТВЕТ».</p>
+                <p>Примечание: разумеется, вместо «ЧИСЛО_1», «ЧИСЛО_2» и «ОТВЕТ» должны быть подставлены соответствующие переменные.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_8.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 9. <a target="_blank" href="lessons/Lesson_2_9/Lesson_2_9.mp4">Оператор switch-case</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Попросите пользователя ввести 2 числа.</p>
+                <p>2) Попросите пользователя ввести одну из операций: +, -, * или /.</p>
+                <p>3) Используя switch-case, запишите в переменную результат выбранной операции между двумя числами из 1-го пункта.</p>
+                <p>4) Выведите в консоль результат.</p>
+                <p>5) Если пользователь ввёл некорректную операцию, то сообщить ему об этом через консоль.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_9.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 10. <a target="_blank" href="lessons/Lesson_2_10/Lesson_2_10.mp4">Циклы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Напишите программу, которая будет принимать числа от пользователя и перемножать их, пока он не напишет слово «result».</p>
+                <p>2) Когда пользователь напишет слово «result», должен быть выведен итоговый результат и начат процесс заново.</p>
+                <p>3) Если пользователь напишет «exit» или «quit», программа должна быть завершена (break внутри цикла).</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_10.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 11. <a target="_blank" href="lessons/Lesson_2_11/Lesson_2_11.mp4">Область видимости переменных</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Создайте переменную любого типа с любым значением и выведите её.</p>
+                <p>2) Создайте любой цикл и выведите внутри него переменную из 1-го пункта 5 раз.</p>
+                <p>3) В рамках цикла объявите ещё одну переменную с любым значением.</p>
+                <p>4) Выведите её так же 5 раз в рамках этого цикла.</p>
+                <p>5) Попробуйте вывести переменную из 3-го пункта за пределами цикла. Убедитесь, что компилятор выдаёт ошибку.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_11.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 12. <a target="_blank" href="lessons/Lesson_2_12/Lesson_2_12.mp4">Массивы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Создайте массив из 5 чисел типа float.</p>
+                <p>2) Используя цикл while, вычислите сумму всех чисел массива.</p>
+                <p>3) Используя цикл for, вычислите произведение всех чисел массива.</p>
+                <p>4) Выведите оба результата в консоль.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_12.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 13. <a target="_blank" href="lessons/Lesson_2_13/Lesson_2_13.mp4">Кортежи</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">
+                <p>1) Создайте кортеж с 3 ключами: name, age, city – в качестве значений укажите свои данные (имя, возраст, город).</p>
+                <p>2) Выведите в консоль все 3 значения.</p>
+              </div>
+            </div>
+            <a class="source" href="files/Lesson_2_13.rar">Исходники</a>
+          </div>
+        </div>
+      </div>
+	  <p style="display: none;" data-demo="end"></p>
+	  <p class="link_full">Следующие уроки можно посмотреть, приобретя полную версию курса:<br /><a class="link_order" href="https://srs.myrusakov.ru/csharp">Программирование на C# с Нуля до Гуру</a></p>
+      <div class="content__section section">
+        <p class="section__name">Объектно-ориентированное программирование в C#</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a href="lessons/Lesson_3_1/Lesson_3_1.html">Что такое ООП?</a>
+            </div>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 2. <a href="lessons/Lesson_3_2/Lesson_3_2.html">Создание класса</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a href="lessons/Lesson_3_3/Lesson_3_3.html">Методы и их перегрузка</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a href="lessons/Lesson_3_4/Lesson_3_4.html">Модификаторы доступа</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a href="lessons/Lesson_3_5/Lesson_3_5.html">Статические поля и методы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_5.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 6. <a href="lessons/Lesson_3_6/Lesson_3_6.html">Перечисления</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_6.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 7. <a href="lessons/Lesson_3_7/Lesson_3_7.html">Структуры</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_7.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 8. <a href="lessons/Lesson_3_8/Lesson_3_8.html">Неизменяемые типы данных</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_8.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 9. <a href="lessons/Lesson_3_9/Lesson_3_9.html">Свойства</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_9.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 10. <a href="lessons/Lesson_3_10/Lesson_3_10.html">Наследование</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_10.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 11. <a href="lessons/Lesson_3_11/Lesson_3_11.html">Переопределение методов</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_11.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 12. <a href="lessons/Lesson_3_12/Lesson_3_12.html">Перегрузка операторов</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_12.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 13. <a href="lessons/Lesson_3_13/Lesson_3_13.html">Абстрактные классы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_13.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 14. <a href="lessons/Lesson_3_14/Lesson_3_14.html">Интерфейсы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_14.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 15. <a href="lessons/Lesson_3_15/Lesson_3_15.html">Обобщённые классы и методы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_15.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 16. <a href="lessons/Lesson_3_16/Lesson_3_16.html">Методы ToString() и Equals()</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_16.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 17. <a href="lessons/Lesson_3_17/Lesson_3_17.html">Клонирование объектов</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_17.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 18. <a href="lessons/Lesson_3_18/Lesson_3_18.html">Делегаты</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_18.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 19. <a href="lessons/Lesson_3_19/Lesson_3_19.html">Анонимные методы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_19.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 20. <a href="lessons/Lesson_3_20/Lesson_3_20.html">События</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_20.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 21. <a href="lessons/Lesson_3_21/Lesson_3_21.html">Лямбда-выражения</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_21.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 22. <a href="lessons/Lesson_3_22/Lesson_3_22.html">Рекурсия</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_3_22.rar">Исходники</a>
+          </div>
+        </div>
+      </div>
+      <div class="content__section section">
+        <p class="section__name">Обработка исключений </p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a href="lessons/Lesson_4_1/Lesson_4_1.html">Основы исключений</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_4_1.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 2. <a href="lessons/Lesson_4_2/Lesson_4_2.html">Блок finally</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_4_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a href="lessons/Lesson_4_3/Lesson_4_3.html">Генерация исключений</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_4_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a href="lessons/Lesson_4_4/Lesson_4_4.html">Обработка нескольких исключений</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_4_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a href="lessons/Lesson_4_5/Lesson_4_5.html">Пользовательские исключения</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_4_5.rar">Исходники</a>
+          </div>
+        </div>
+      </div>
+      <div class="content__section section">
+        <p class="section__name">Работа с HTML-документом</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a href="lessons/Lesson_5_1/Lesson_5_1.html">Работа со строками</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_1.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 2. <a href="lessons/Lesson_5_2/Lesson_5_2.html">Регулярные выражения</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a href="lessons/Lesson_5_3/Lesson_5_3.html">Класс Math</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a href="lessons/Lesson_5_4/Lesson_5_4.html">Работа с датой и временем</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a href="lessons/Lesson_5_5/Lesson_5_5.html">Класс ArrayList</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_5.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 6. <a href="lessons/Lesson_5_6/Lesson_5_6.html">Класс Dictionary</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_6.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 7. <a href="lessons/Lesson_5_7/Lesson_5_7.html">Работа с каталогами</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_7.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 8. <a href="lessons/Lesson_5_8/Lesson_5_8.html">Работа с файлами</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_8.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 9. <a href="lessons/Lesson_5_9/Lesson_5_9.html">Чтение и запись файлов</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_5_9.rar">Исходники</a>
+          </div>
+        </div>
+      </div>
+      <div class="content__section section">
+        <p class="section__name">Создание клиент-серверных приложений</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a href="lessons/Lesson_6_1/Lesson_6_1.html">Чтение данных с сайта</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_6_1.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 2. <a href="lessons/Lesson_6_2/Lesson_6_2.html">Создание серверной части</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_6_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a href="lessons/Lesson_6_3/Lesson_6_3.html">Создание клиентской части</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_6_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a href="lessons/Lesson_6_4/Lesson_6_4.html">Отправка e-mail</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_6_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a href="lessons/Lesson_6_5/Lesson_6_5.html">Работа с FTP</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_6_5.rar">Исходники</a>
+          </div>
+        </div>
+      </div>
+      <div class="content__section section">
+        <p class="section__name">Многопоточное программирование</p>
+        <p class="section__show">
+          <img src="img/arrow.svg" alt="">
+        </p>
+        <div class="section__lessons">
+          <div class="section__lesson">
+            <div>
+              Урок 1. <a href="lessons/Lesson_7_1/Lesson_7_1.html">Основы многопоточного программирования</a>
+            </div>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 2. <a href="lessons/Lesson_7_2/Lesson_7_2.html">Таймеры</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_2.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 3. <a href="lessons/Lesson_7_3/Lesson_7_3.html">Создание потока</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_3.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 4. <a href="lessons/Lesson_7_4/Lesson_7_4.html">Синхронизация потоков</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_4.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 5. <a href="lessons/Lesson_7_5/Lesson_7_5.html">Мьютексы</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_5.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 6. <a href="lessons/Lesson_7_6/Lesson_7_6.html">Семафоры</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_6.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 7. <a href="lessons/Lesson_7_7/Lesson_7_7.html">Параллельное программирование</a>
+            </div>
+            <div class="section__homework-block">
+              <a class="practice" href="#">Упражнения</a>
+              <div class="section__homework">Это упражнение доступно только в полной версии курса: <a target="_blank" href="https://srs.myrusakov.ru/csharp">https://srs.myrusakov.ru/csharp</a></div>
+            </div>
+            <a class="source" href="files/Lesson_7_7.rar">Исходники</a>
+          </div>
+          <div class="section__lesson">
+            <div>
+              Урок 8. <a href="lessons/Lesson_7_8/Lesson_7_8.html">Заключение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content__bonus">
+      <div class="wrap">
+        <div class="content__section section section--bonus">
+          <div class="section__block">
+            <div class="section__left">
+              <img class="section__img" src="img/bonus.png" alt="">
+            </div>
+            <div class="section__right">
+              <p class="section__name">Технология Windows<br> Presentation Foundation </p>
+            </div>
+          </div>
+          <p class="section__show">
+            <img src="img/arrow2.svg" alt="">
+          </p>
+          <div class="section__lessons">
+            <div class="section__lesson">
+              <div>
+                Урок 1. <a href="lessons/Bonus_1_1/Bonus_1_1.html">Основы создания пользовательского интерфейса</a>
+              </div>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 2. <a href="lessons/Bonus_1_2/Bonus_1_2.html">Настройки окна</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_2.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 3. <a href="lessons/Bonus_1_3/Bonus_1_3.html">Элементы пользовательского интерфейса</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_3.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 4. <a href="lessons/Bonus_1_4/Bonus_1_4.html">Стили</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_4.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 5. <a href="lessons/Bonus_1_5/Bonus_1_5.html">Компоновка элементов</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_5.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 6. <a href="lessons/Bonus_1_6/Bonus_1_6.html">Программное создание интерфейса</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_6.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 7. <a href="lessons/Bonus_1_7/Bonus_1_7.html">Обработка событий</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_7.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 8. <a href="lessons/Bonus_1_8/Bonus_1_8.html">Обработка событий мыши</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_8.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 9. <a href="lessons/Bonus_1_9/Bonus_1_9.html">Обработка событий клавиатуры</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_9.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 10. <a href="lessons/Bonus_1_10/Bonus_1_10.html">Работа с меню</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_10.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 11. <a href="lessons/Bonus_1_11/Bonus_1_11.html">Пример создания приложения</a>
+              </div>
+			  <a class="source" href="files/Bonus_1_11.rar">Исходники</a>
+            </div>
+          </div>
+        </div>
+        <div class="content__section section section--bonus">
+          <div class="section__block">
+            <div class="section__left">
+              <img class="section__img" src="img/bonus2.png" alt="">
+            </div>
+            <div class="section__right">
+              <p class="section__name">Создание<br> библиотеки классов </p>
+            </div>
+          </div>
+          <p class="section__show">
+            <img src="img/arrow2.svg" alt="">
+          </p>
+          <div class="section__lessons">
+            <div class="section__lesson">
+              <div>
+                Урок 1. <a href="lessons/Bonus_2_1/Bonus_2_1.html">Создание проекта и постановка задачи</a>
+              </div>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 2. <a href="lessons/Bonus_2_2/Bonus_2_2.html">Создание класса Task</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_2.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 3. <a href="lessons/Bonus_2_3/Bonus_2_3.html">Создание класса TimeException</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_3.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 4. <a href="lessons/Bonus_2_4/Bonus_2_4.html">Создание класса Project</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_4.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 5. <a href="lessons/Bonus_2_5/Bonus_2_5.html">Создание класса Manager</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_5.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 6. <a href="lessons/Bonus_2_6/Bonus_2_6.html">Консольный интерфейс</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_6.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 7. <a href="lessons/Bonus_2_7/Bonus_2_7.html">Создание класса ReadConsole</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_7.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 8. <a href="lessons/Bonus_2_8/Bonus_2_8.html">Добавление тестовых данных</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_8.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 9. <a href="lessons/Bonus_2_9/Bonus_2_9.html">Добавление проекта и задачи</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_9.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 10. <a href="lessons/Bonus_2_10/Bonus_2_10.html">Вывод данных</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_10.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 11. <a href="lessons/Bonus_2_11/Bonus_2_11.html">Изменение проекта и задачи</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_11.rar">Исходники</a>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 12. <a href="lessons/Bonus_2_12/Bonus_2_12.html">Удаление проекта и задачи</a>
+              </div>
+			  <a class="source" href="files/Bonus_2_12.rar">Исходники</a>
+            </div>
+          </div>
+        </div>
+        <div class="content__section section section--bonus">
+          <div class="section__block">
+            <div class="section__left">
+              <img class="section__img" src="img/bonus3.png" alt="">
+            </div>
+            <div class="section__right">
+              <p class="section__name">Правильная работа<br> со справочником</p>
+            </div>
+          </div>
+          <p class="section__show">
+            <img src="img/arrow2.svg" alt="">
+          </p>
+          <div class="section__lessons">
+            <div class="section__lesson">
+              <div>
+                Урок 1. <a href="lessons/Bonus_3_1/Bonus_3_1.html">Как работать со справочником?</a>
+              </div>
+            </div>
+            <div class="section__lesson">
+              <div>
+                Урок 2. <a href="lessons/Bonus_3_2/Bonus_3_2.html">Создание и извлечение архива</a>
+              </div>
+			  <a class="source" href="files/Bonus_3_2.rar">Исходники</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content__files">
+      <div class="wrap">
+        <div class="content__section section">
+          <p class="section__name">Полезные ссылки</p>
+          <div class="section__materials">
+            <div class="section__material">
+              <a target="_blank" href="https://myrusakov.ru/r/visualstudio"><span>Visual Studio</span></a>
+            </div>
+            <div class="section__material">
+              <a target="_blank" href="https://myrusakov.ru/r/csharpdocs"><span>Справочник</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<body>
-		<h3>Просто хотел сказать вам привет и спросить как у вас дела</h3>
+  <div class="courses">
+    <div class="wrap">
+    <p class="title-courses">Этот курс идеально дополняют следующие товары:</p>
+  <div class="course course--two-block">
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Создание игр на Unreal Engine 4"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/ue4-cover.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>184 урока</p>
+          </div>
+          <div class="course__time">
+            <p>41 час видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный подробнейший курс научит Вас созданию игр на Unreal Engine 4. Курс состоит из 12 модулей, в которых Вы с нуля освоите этот движок и сможете создавать самые разные игры. В курсе Вы получите всю необходимую теоретическую часть, а также увидите массу практических примеров. Дополнительно, почти к каждому уроку идут упражнения для закрепления материала.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=41">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/ue4">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Программирование на JavaScript с Нуля до Гуру 2.0"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/js-cover.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>123 урока</p>
+          </div>
+          <div class="course__time">
+            <p>27 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный курс научит Вас программировать на языке JavaScript, являющийся самым востребованным в мире. Курс состоит из 8 разделов, в которых Вы с нуля освоите этот язык и сможете создавать самые разные программы для самых разных задач любой сложности.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=40">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/javascript2">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Программирование на Python с Нуля до Гуру"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/python.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>73 урока</p>
+          </div>
+          <div class="course__time">
+            <p>12 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный курс научит Вас программировать на языке Python, который крайне желательно знать любому, кто хоть иногда имеет дело с компьютерами. Курс состоит из 6 разделов, в которых Вы с нуля освоите этот язык и сможете создавать самые разные программы для самых разных задач любой сложности.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=38">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/python">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Создание крупного проекта на Java с нуля"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/java-project-big.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>67 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>16 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">В этом курсе Вы увидите процесс создания сложного проекта на Java с нуля. Вы увидите, как планируется программа, как создаётся вся базовая часть, как потом наращивается функционал. Пройдя данный курс и выполнив упражнения, Вы научитесь реализовывать свои собственные крупные проекты на Java и будете точно знать, как грамотно их реализовывать.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=37">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/javaproject">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс<br> "WordPress 5 с Нуля до Гуру"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course-wp5.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>37 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>5 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Этот курс научит Вас создавать сайты на самой популярной CMS в мире - WordPress. Курс проходится буквально за 1 вечер, а знания остаются на всю жизнь! Помимо полного разбора WordPress 5, здесь показан пример создания реального сайта на этой системе вместе с размещением его в Интернете.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=36">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/wp5">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Создание приложений для Android с нуля"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course-android.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>105 урока</p>
+          </div>
+          <div class="course__time">
+            <p>20 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Этот курс научит Вас создавать приложения любой сложности для самой популярной ОС в мире - Android. Сам курс состоит из 16 разделов, в которых Вы с самых основ будете учиться создавать приложения для Android.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=35">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/android">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс "Программирование на Java с Нуля до Гуру"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course-java.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>80 урока</p>
+          </div>
+          <div class="course__time">
+            <p>15 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный курс научит Вас программировать на одном из самых прибыльных и востребованных языков в мире - Java. Курс состоит из 9-ти разделов, в которых с нуля объясняется и показывается процесс написания программ на Java.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=34">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/java">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Система "Вёрстка сайта с нуля 2.0"</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course-verstka.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>54 урока</p>
+          </div>
+          <div class="course__time">
+            <p>12 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Этот курс обучит Вас абсолютно с нуля HTML5 и CSS3, а также научит верстать сайты с помощью реальных примеров вёрстки. Обучение идёт от простого к сложному. В последнем разделе курса идёт обучение адаптивной вёрстке сайтов: Вы узнаете всю необходимую теорию, а также увидите пример реальной адаптивной вёрстки сайта.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=33">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/makeup2">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Система «Своя Web-студия за 55 дней»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course6.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>39 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>9 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Обучение построено на теории, плюс практике, то есть я прямо на Ваших глазах буду абсолютно с нуля открывать свою Web-студию, нанимать специалистов, принимать и выполнять заказы. Это настоящее реалити-шоу. Просто повторяя все шаги за мной, Вы на выходе получите свою полноценную Web-студию с постоянным потоком клиентов.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=32">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/web55">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «PHP и MySQL с Нуля до Гуру 2.0»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course3.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>120 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>25 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный курс научит Вас программировать на самом популярном Web-языке в мире - PHP. Курс состоит из 11 разделов, в которых с нуля рассказывается и показывается процесс написания различных скриптов на PHP.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=31">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/php7">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Joomla 3 с Нуля до Гуру»</p>
+      <p class="course__author">Автор: Олег Касьянов</p>
+      <div class="course__img">
+        <img src="img/course7.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>71 урок</p>
+          </div>
+          <div class="course__time">
+            <p>10 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс поможет Вам повысить свой уровень в веб-разработке и научит создавать удобные и эффективные сайты на Joomla 3. Курс подходит как для опытных вебмастеров, так и для новичков, кто ещё только начинает.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=29">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/joomla">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «React JS, Redux, ES2015 с Нуля до Гуру»</p>
+      <p class="course__author">Автор: Владилен Минин</p>
+      <div class="course__img">
+        <img src="img/course8.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>57 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>11 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный курс - это обширный курс по JavaScript и фреймворку React, который позволит Вам с нуля создавать мощные современные, динамические JavaScript-приложения.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=28">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/reactjs">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Создание и продвижение лендинга под ключ»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course9.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>56 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>14 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Создание и продвижение лендинга под ключ" научит Вас создавать профессиональные лендинги на любую тематику с нуля и под ключ.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=26">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/landing">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Создание Интернет-магазина на OpenCart 2.0»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course10.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>66 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>6 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Создание Интернет-магазина на OpenCart 2.0" обучит Вас созданию любых Интернет-магазинов на OpenCart 2. В первом разделе курса разбираются абсолютно все возможности данного движка с примерами.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=25">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/im2">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Фреймворк Yii 2.0 с нуля. Пример создания сайта»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course11.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>28 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>6 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Фреймворк Yii 2.0 с нуля. Пример создания сайта" обучит Вас созданию профессиональных сайтов с использованием фреймворка Yii. В курсе есть 2 раздела: теоретический и практический.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=24">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/yii">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Коллекция VIP-видеоуроков</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course1.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>10 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>3 часа видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Данный комплект содержит много VIP уроков на разные темы.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=23&is_digit=1">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/vip10">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Заработок на создании сайтов под заказ»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course12.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>13 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>2 часа видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Этот видеокурс - это то, что может полностью изменить Вашу жизнь в лучшую сторону. В этом курсе Вы узнаете все мои секреты успешного заработка на создании сайтов под заказ.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=10">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/fl">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «WordPress 4. Пример создания блога»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course13.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>34 урока</p>
+          </div>
+          <div class="course__time">
+            <p>5 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "WordPress 4. Пример создания блога" научит Вас создавать любые сайты на самой популярной CMS - WordPress.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=9">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/wp">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Создание движка на PHP и MySQL 2.0»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course14.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>99 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>17 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Создание движка на PHP и MySQL 2.0" научит Вас создавать профессиональные движки для сайтов на PHP и MySQL с использованием ООП и паттерна MVC.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=8">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/php2">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «HTML5 и CSS3 с Нуля до Гуру»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course15.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>48 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>8 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "HTML5 и CSS3 с Нуля до Гуру" научит Вас создавать сайты с использованием HTML5 и CSS3. Из курса Вы узнаете, что нового появилось в этих Web-технологиях с разбором множества примеров.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=7">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/html5">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «JavaScript, jQuery и Ajax с Нуля до Гуру»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course4.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>56 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>7 часов видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "JavaScript, jQuery и Ajax с Нуля до Гуру" научит Вас "вдыхать жизнь" в страницы, делая их с потрясающими эффектами и максимальным удобством для пользователя.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=5">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/javascript">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Создание Интернет-магазина на PHP и MySQL»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course5.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>89 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>22 часа видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Создание Интернет-магазина на PHP и MySQL" - это уникальный курс по созданию Интернет-магазина с нуля. Особенностью данного курса является то, что создание идёт с самого начала, то есть от идеи, и до размещения в Интернете.course5.png</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=4">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/im">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Видеокурс «Создание и Раскрутка сайта от А до Я»</p>
+      <p class="course__author">Автор: Михаил Русаков</p>
+      <div class="course__img">
+        <img src="img/course16.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>246 уроков</p>
+          </div>
+          <div class="course__time">
+            <p>54 часа видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">Видеокурс "Создание и Раскрутка сайта от А до Я" - это 246 видеоуроков общей продолжительностью более 50-ти часов по теме создания, размещения в Интернете и раскрутке сайта. В качестве раскручиваемого сайта был выбран MyRusakov.ru.course16.png</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=1">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/kurs">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="course__element">
+      <p class="course__title">Фреймворк Bootstrap «Практика адаптивной верстки от А до Я»</p>
+      <p class="course__author">Автор: Андрей Кудлай</p>
+      <div class="course__img">
+        <img src="img/course17.png" alt="">
+      </div>
+      <div class="course__txt">
+        <div class="course__icons">
+          <div class="course__lesson">
+            <p>91 урок</p>
+          </div>
+          <div class="course__time">
+            <p>23 часа видео</p>
+          </div>
+        </div>
+        <p class="course__excerpt">В этом курсе Вы увидите всю необходимую теорию и практику вёрстки с помощью Bootstrap. Bootstrap - это фреймворк, который позволяет верстать сайты значительно легче и быстрее, также он практически всегда необходим при трудоустройстве.</p>
+        <div class="course__buttons">
+          <a target="_blank" class="course__order order" href="https://srs.myrusakov.ru/order?product_ids=27">Заказать курс</a>
+          <a target="_blank" class="course__info info" href="https://srs.myrusakov.ru/bootstrap">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <div class="wrap">
+        <img src="img/logo.svg" alt="">
+        <p class="footer__copy">&copy; MyRusakov.ru</p>
+        <p class="footer__copy">ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+      </div>
+    </footer>
+  </div>
+</div>
 </body>
-
 </html>
